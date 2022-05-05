@@ -9,7 +9,6 @@
     box-sizing: border-box;
 }
 
-
 body{
     display: flex;
     justify-content: center;
@@ -22,11 +21,9 @@ body{
 /* ======================================== */
 
 .voting-machine{
-    background-color: #dbd5c9;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 20px;
     display: flex;
+    padding: 30px;
+    background-color: #dbd5c9;
 }
 
 
@@ -36,10 +33,8 @@ body{
 
 .screen{
     width: 500px;
-    height: 300px;
+    height: 320px;
     background: linear-gradient(to right, #E8E8E8, #C1C1C1);
-    border: 1px solid black;
-    border-radius: 5px;
 }
 
 
@@ -48,6 +43,31 @@ body{
 /* ======================================== */
 
 .keyboard{
-    background-color: #403A3A;
     margin-left: 40px;
+    background-color: #403A3A;
+}
+
+
+.keyboard-line{
+    display: flex;
+    justify-content: center;
+}
+
+
+.keyboard-button{
+    width: 80px;
+    height: 40px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 2px 2px 0 #555;
+}
+
+.keyboard-button:hover{
+    cursor: pointer;
 }
