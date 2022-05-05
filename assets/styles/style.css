@@ -1,0 +1,53 @@
+/* ======================================== */
+/* FORMATING */
+/* ======================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ======================================== */
+/* VOTING MACHINE */
+/* ======================================== */
+
+.voting-machine{
+    background-color: #dbd5c9;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+}
+
+
+/* ======================================== */
+/* SCREEN */
+/* ======================================== */
+
+.screen{
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+/* ======================================== */
+/* KEYBOARD */
+/* ======================================== */
+
+.keyboard{
+    background-color: #403A3A;
+    margin-left: 40px;
+}
