@@ -7,6 +7,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -23,7 +24,9 @@ body{
 .voting-machine{
     display: flex;
     padding: 30px;
+    margin-top: 60px;
     background-color: #dbd5c9;
+    border: 2px solid #222;
 }
 
 
@@ -35,6 +38,7 @@ body{
     width: 500px;
     height: 320px;
     background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border: 2px solid #222;
 }
 
 
@@ -45,6 +49,7 @@ body{
 .keyboard{
     margin-left: 40px;
     background-color: #403A3A;
+    border: 2px solid #222;
 }
 
 
@@ -70,4 +75,27 @@ body{
 
 .keyboard-button:hover{
     cursor: pointer;
+}
+
+.option-white{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.option-correct{
+    background-color: #F09046;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.option-confirm{
+    background-color: #48C079;
+    color: black;
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
 }
