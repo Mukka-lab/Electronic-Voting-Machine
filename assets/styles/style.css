@@ -18,6 +18,17 @@ body{
 
 
 /* ======================================== */
+/* ANIMATIONS */
+/* ======================================== */
+
+@keyframes blink-effect{
+    0%{opacity: 0.2;}
+    50%{opacity: 1;}
+    100%{opacity: 0.2;}
+}
+
+
+/* ======================================== */
 /* VOTING MACHINE */
 /* ======================================== */
 
@@ -39,7 +50,7 @@ body{
     flex-direction: column;
     width: 500px;
     height: 320px;
-    padding: 20px;
+    padding: 10px;
     background: linear-gradient(to right, #E8E8E8, #C1C1C1);
     border: 2px solid #222;
 }
@@ -56,10 +67,59 @@ body{
 
 .division-1-left{
     flex: 1;
+    flex-direction: column;
 }
 
 .division-1-right{
     width: 100px;
+}
+
+.division-1-text-1{
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.division-1-text-2{
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.division-1-text-3{
+    height: 50px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.number-box{
+
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    border: 1px solid black;
+}
+
+.blink-effect{
+    animation-name: blink-effect;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+.division-1-text-4{
+    flex: 1;
+}
+
+.division-1-text-4 p{
+    margin: 10px 0;
 }
 
 
@@ -70,8 +130,8 @@ body{
 }
 
 .division-2 p{
-    margin: 5px 0;
-    margin-left: 20px;
+    margin: 2px 0;
+    margin-left: 10px;
 }
 
 
