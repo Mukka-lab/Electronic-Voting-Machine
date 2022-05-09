@@ -49,7 +49,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 500px;
-    height: 320px;
+    height: 380px;
     padding: 10px;
     background: linear-gradient(to right, #E8E8E8, #C1C1C1);
     border: 2px solid #222;
@@ -72,7 +72,31 @@ body{
 
 .division-1-right{
     width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
+
+.division-1-right p{
+    font-weight: bold;
+}
+
+.candidate{
+    border: 1px solid black;
+    background-color: lightgray;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.candidate img{
+    width: 100%;
+    height: 80px;
+}
+
+.candidate .vice img{
+    width: 80%;
+}
+
 
 .division-1-text-1{
     height: 30px;
@@ -175,6 +199,7 @@ body{
     color: black;
     font-size: 15px;
     font-weight: bold;
+    margin-top: 40px;
 }
 
 .option-correct{
@@ -182,6 +207,7 @@ body{
     color: black;
     font-size: 15px;
     font-weight: bold;
+    margin-top: 40px;
 }
 
 .option-confirm{
@@ -191,4 +217,5 @@ body{
     width: 100px;
     height: 50px;
     font-weight: bold;
+    margin-top: 40px;
 }
