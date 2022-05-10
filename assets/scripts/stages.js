@@ -4,19 +4,21 @@ let stages = [
         numbers: 5,
         candidates: [
             {
-                number: 78000,
-                name: "GOKU",
-                political_party: 'DBZ',
-                photo: [
-                    {url: "goku.png", legend: "PRESIDENTE", small: false}
-                ],
+                    number: '78888',
+                    name: "GOKU",
+                    political_party: 'DBZ',
+                    photo: [
+                        {url: "goku.png", legend: "PRESIDENTE"}
+                    ],
+                },
 
-                number: 96455,
-                name: "LUFFY",
-                political_party: 'OP',
-                photo: [
-                    {url: "luffy.png", legend: "PRESIDENTE"}
-                ]
+                {
+                    number: '96455',
+                    name: "LUFFY",
+                    political_party: 'OP',
+                    photo: [
+                        {url: "luffy.png", legend: "PRESIDENTE"}
+                    ]
             },
         ]
     },
@@ -26,14 +28,14 @@ let stages = [
         numbers: 5,
         candidates: [
             {
-                number: 78001,
+                number: '78001',
                 name: "KURIRIN",
                 political_party: 'DBZ',
                 photo: [
                     {url: "kuririn.png", legend: "GOVERNADOR", small: true}
                 ],
 
-                number: 96456,
+                number: '96456',
                 name: "ZORO",
                 political_party: 'OP',
                 photo: [
