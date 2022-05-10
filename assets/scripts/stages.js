@@ -6,14 +6,14 @@ let stages = [
             {
                 number: 78000,
                 name: "GOKU",
-                political_party: DBZ,
+                political_party: 'DBZ',
                 photo: [
                     {url: "goku.png", legend: "PRESIDENTE", small: false}
                 ],
 
                 number: 96455,
                 name: "LUFFY",
-                political_party: OP,
+                political_party: 'OP',
                 photo: [
                     {url: "luffy.png", legend: "PRESIDENTE"}
                 ]
@@ -28,14 +28,14 @@ let stages = [
             {
                 number: 78001,
                 name: "KURIRIN",
-                political_party: DBZ,
+                political_party: 'DBZ',
                 photo: [
                     {url: "kuririn.png", legend: "GOVERNADOR", small: true}
                 ],
 
                 number: 96456,
                 name: "ZORO",
-                political_party: OP,
+                political_party: 'OP',
                 photo: [
                     {url: "zoro.png", legend: "GOVERNADOR"}
                 ]
