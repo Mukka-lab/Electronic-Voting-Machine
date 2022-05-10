@@ -44,10 +44,17 @@ function interfaceUpdate(){
 // ============================================
 
 function clicked(n){
-    let vote_number = document.querySelector('.number-box .blink-effect');
+    let vote_number = document.querySelector('.number-box.blink-effect');
     if(vote_number !== null){
         vote_number.innerHTML = n;
         number = `${number}${n}`;
+
+        vote_number.classList.remove('blink-effect');
+        if(vote_number.nextElementSibling !== null){
+            vote_number.nextElementSibling.classList.add('blink-effect');
+        } else {
+            interfaceUpdate();
+        }
     };
 };
 
