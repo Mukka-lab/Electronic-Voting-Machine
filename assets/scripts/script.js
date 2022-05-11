@@ -110,20 +110,11 @@ function confirm(){
 
     if(buttonWhite === true){
         buttonConfirm = true;
-        alert("Voto confirmado como <strong>VOTO EM BRANCO</strong>");
+        document.querySelector('.screen').innerHTML = '<div class="large-alert blink-effect">FIM</div>';
     } else if (number.length === stage.numbers){
         buttonConfirm = true;
-        alert("Voto confirmado!");
+        document.querySelector('.screen').innerHTML = '<div class="large-alert blink-effect">FIM</div>';
     }
-
-    if(buttonConfirm){
-        atualStage++;
-        if(stages[atualStage] !== undefined){
-            startStage();
-        } else {
-            alert("FIM");
-        };
-    };
 };
 
 // ============================================
