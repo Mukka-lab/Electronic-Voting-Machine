@@ -57,6 +57,10 @@ function interfaceUpdate(){
         }
 
         side.innerHTML = photosHTML;
+    } else {
+        substituteText.style.display = "block";
+        tutorial.style.display = "block";
+        desc.innerHTML = '<div class="alert blink-effect">VOTO NULO</div>';
     };
 };
 
