@@ -9,12 +9,15 @@ let numbers = document.querySelector('.division-1-text-3');
 
 let atualStage = 0;
 let number = '';
+let buttonWhite = false;
 
 
 function startStage(){
     let stage = stages[atualStage];
 
     let numberHTML = '';
+    number = '';
+    buttonWhite = false;
 
     for(let i=0; i < stage.numbers; i++){
         if(i === 0){
@@ -86,15 +89,41 @@ function clicked(n){
 
 
 function white(){
-    alert("Pressionou o botão branco!");
+    if(number === ''){
+        buttonWhite = true;
+        substituteText.style.display = "block";
+        tutorial.style.display = "block";
+        numbers.innerHTML = '';
+        desc.innerHTML = '<div class="alert blink-effect">VOTO EM BRANCO</div>';
+    } else {
+        alert("Para voto em BRANCO o campo precisa estar vazio!");
+    };
 };
 
 function correct(){
-    alert("Pressionou o botão corrige!");
+    startStage();
 };
 
 function confirm(){
-    alert("Pressionou o botão confirma!");
+    let stage = stages[atualStage];
+    let buttonConfirm = false;
+
+    if(buttonWhite === true){
+        buttonConfirm = true;
+        alert("Voto confirmado como <strong>VOTO EM BRANCO</strong>");
+    } else if (number.length === stage.numbers){
+        buttonConfirm = true;
+        alert("Voto confirmado!");
+    }
+
+    if(buttonConfirm){
+        atualStage++;
+        if(stages[atualStage] !== undefined){
+            startStage();
+        } else {
+            alert("FIM");
+        };
+    };
 };
 
 // ============================================
